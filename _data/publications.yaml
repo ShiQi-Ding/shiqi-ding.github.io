@@ -12,16 +12,16 @@ papers:
     paper_url: "https://doi.org/10.1016/j.scs.2025.106193"
 
   - type: journal
-    selected: y
+    selected: n
     title: "Short-term natural disaster impacts on transportation infrastructure: A Systematic Review"
-    authors: "Bei Dong, <b>Shiqi Ding</b>, Lingzi Wu, Xinghua Li"
+    authors: "Beixuan Dong, <b>Shiqi Ding</b>, Lingzi Wu, Xinghua Li"
     venue: "Natural Hazards, 121, 17321–17362, 2025."
     paper_url: "https://doi.org/10.1007/s11069-025-07504-9"
 
   - type: journal
     selected: y
     title: "Enhancing energy efficiency and thermal satisfaction in office buildings: A comprehensive evaluation of space match strategy"
-    authors: "<b>Shiqi Ding</b>, Chao Tang, Da Li, Sara Lopes"
+    authors: "<b>Shiqi Ding</b>, Chengyu Tang, Da Li, Snowil Lopes"
     venue: "Energy and Buildings, 298, 113526, 2023."
     paper_url: "https://doi.org/10.1016/j.enbuild.2023.113526"
 
@@ -45,7 +45,7 @@ papers:
   - type: conference
     selected: y
     title: "Assessing energy performance and thermal satisfaction of flexible space usage in office buildings"
-    authors: "<b>Shiqi Ding</b>, Chao Tang, Sara Lopes, Da Li"
+    authors: "<b>Shiqi Ding</b>, Chengyu Tang, Snowil Lopes, Da Li"
     venue: "Construction Research Congress (CRC), pp. 316–326, 2024."
     paper_url: "https://doi.org/10.1061/9780784485279.033"
 
@@ -62,7 +62,7 @@ papers:
     paper_label: "Preprint"
 
   - type: under_review
-    selected: y
+    selected: n
     title: "The Effect of Perceived Weather on Short-Term EV Charging Load Forecasting"
     authors: "<b>Shiqi Ding</b>, Lingzi Wu"
     venue: "Manuscript in preparation."
