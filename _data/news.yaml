@@ -3,19 +3,22 @@
 items:
 
   - date: "04/2026"
-    text: "I successfully passed my PhD general exam and became a PhD Candidate!"
+    text: "Successfully passed my PhD general exam and became a PhD Candidate!"
 
   - date: "12/2025"
-    text: "I earned the Graduate Certificate in Clean Energy Science, Engineering, &amp; Society from the CEI."
+    text: "Earned the Graduate Certificate in Clean Energy Science, Engineering, &amp; Society from the CEI."
 
   - date: "10/2025"
-    text: "I presented my work at the UDP PhD Seminar at UW."
+    text: "Presented my work at the <i>ACSP Annual Conference</i> in Minneapolis. Excited to share my EVMT work!"
 
   - date: "10/2025"
-    text: "I presented my work at the <i>ACSP Annual Conference</i> in Minneapolis. Excited to share my EVMT work!"
+    text: "Presented my work at the UDP PhD Seminar at UW."
+
+  - date: "08/2025"
+    text: "Helped organize and gave a talk at the Washington transportation high school summer camp. I'm grateful to help inspire their journey."
 
   - date: "05/2025"
-    text: "I received <i>Most Inspiring</i> and <i>Best Use of Visuals</i> at the CEI Graduate Fellow Lightning Talk. Really fun to share my work with fellows in such diverse research backgrounds."
+    text: "Received <i>Most Inspiring</i> and <i>Best Use of Visuals</i> at the CEI Graduate Fellow Lightning Talk. Really fun to share my work with fellows in such diverse research backgrounds."
 
   - date: "05/2024"
-    text: "I was awarded the <b>Clean Energy Institute Graduate Fellowship</b>, fellowship plus two quarters of RA support!"
+    text: "Was awarded the <b>Clean Energy Institute Graduate Fellowship</b>, fellowship plus two quarters of RA support!"
