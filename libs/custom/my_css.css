@@ -93,6 +93,86 @@ h4 {
   text-decoration: none; }
 .main-description a:hover {
   color: #33C3F0; }
+
+/* ========== Project page ========== */
+.project-row {
+  border-top: 1px solid #f0f0f0;
+  padding-top: 28px;
+  margin-top: 28px; }
+.project-row:first-of-type {
+  border-top: none;
+  padding-top: 8px;
+  margin-top: 8px; }
+.project-row .row {
+  align-items: center; }
+.project-title {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02rem; }
+.project-keywords {
+  color: #666;
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin-bottom: 0; }
+.project-thumb {
+  background: #f1f1f1;
+  height: 140px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.18rem;
+  border: 1px dashed #ddd; }
+.project-thumb.in-progress {
+  background: #fbf6e9;
+  color: #b88a1e;
+  border-color: #ead9a9; }
+.project-outro {
+  margin-top: 36px;
+  color: #555;
+  font-style: italic; }
+.project-outro a {
+  color: #33C3F0; }
+
+/* ========== Teaching page ========== */
+.teaching-section-heading {
+  margin-top: 28px; }
+.teaching-section-heading:first-of-type {
+  margin-top: 0; }
+.teaching-dept {
+  color: #888;
+  font-size: 0.92rem; }
+.teaching-placeholder {
+  color: #888;
+  font-style: italic;
+  margin-top: 0.4rem; }
+
+/* ========== Off Hours page ========== */
+.hobby-section {
+  padding: 3rem 0; }
+.hobby-icon {
+  margin-right: 0.7rem;
+  color: #aaa;
+  font-size: 0.85em; }
+.hobby-intro {
+  color: #555;
+  font-style: italic;
+  margin-bottom: 1.4rem;
+  line-height: 1.55; }
+.hobby-placeholder {
+  background: #fafafa;
+  border: 1px dashed #ddd;
+  border-radius: 4px;
+  padding: 36px 20px;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.85rem;
+  letter-spacing: 0.12rem;
+  text-transform: uppercase; }
 .footer {
   text-align: center;
   color: rgba(0, 0, 0, 0.4);

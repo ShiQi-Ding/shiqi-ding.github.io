@@ -6,13 +6,31 @@ title: Teaching
 <div class="docs-section" id="teaching">
   <h4>Teaching</h4>
 
+  <h5 class="teaching-section-heading">Teaching Statement</h5>
+  <p class="teaching-placeholder">My full teaching statement will be added here soon.</p>
+
+  <h5 class="teaching-section-heading">Courses</h5>
   <ul class="vita-list">
-    {% for item in site.data.teaching.items %}
+    {% for item in site.data.teaching.courses %}
       <li>
         <b>{{ item.role }}, {{ item.time }}</b><br/>
         {{ item.course }}<br/>
-        <span style="color: #777;">{{ item.department }}</span>
+        <span class="teaching-dept">{{ item.department }}</span>
       </li>
     {% endfor %}
   </ul>
+
+  <h5 class="teaching-section-heading">Summer Camp &amp; Educational Training</h5>
+  <ul class="vita-list">
+    {% for item in site.data.teaching.summer_camp %}
+      <li>
+        <b>{{ item.role }}, {{ item.time }}</b><br/>
+        <span class="teaching-dept">{{ item.name }}</span><br/>
+        {{ item.description }}
+      </li>
+    {% endfor %}
+  </ul>
+
+  <h5 class="teaching-section-heading">Course Materials</h5>
+  <p class="teaching-placeholder">Selected materials from RE 497/597 (syllabus, agenda, sample exercises) will be linked here.</p>
 </div>

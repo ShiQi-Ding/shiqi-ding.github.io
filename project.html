@@ -7,6 +7,27 @@ title: Project
   <h4>Project</h4>
 
   <p>
-    I&rsquo;m working on a few research projects at the intersection of urban systems, transportation, and energy. Detailed write-ups are coming soon &mdash; in the meantime, feel free to read my <a href="{{ '/#publications' | prepend: site.baseurl }}">publications</a> or reach out by email.
+    A few research projects at the intersection of urban systems, transportation, and energy. Detailed write-ups will be added here over time.
+  </p>
+
+  {% for project in site.data.projects.items %}
+    <div class="project-row">
+      <div class="row">
+        <div class="seven columns">
+          <h5 class="project-title">{{ project.title }}</h5>
+          <p class="project-keywords">{{ project.keywords }}</p>
+        </div>
+        <div class="five columns">
+          <div class="project-thumb {% if project.status == 'in-progress' %}in-progress{% endif %}">
+            <span>{% if project.status == 'in-progress' %}In progress{% else %}Coming soon{% endif %}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+
+  {% assign mailto = site.data.main_info.email | replace: ' [AT] ', '@' %}
+  <p class="project-outro">
+    Always happy to hear from people working on related questions &mdash; feel free to <a href="mailto:{{ mailto }}">email</a>.
   </p>
 </div>

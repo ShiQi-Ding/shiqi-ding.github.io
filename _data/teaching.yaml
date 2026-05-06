@@ -1,4 +1,4 @@
-items:
+courses:
 
   - role: "Predoctoral Instructor"
     time: "2024 Au &amp; 2025 Au"
@@ -14,3 +14,20 @@ items:
     time: "2024 Winter"
     course: "R E 397: Introduction to Real Estate Data Modeling"
     department: "Runstad Department of Real Estate, UW"
+
+# Summer camp / educational-training experiences.
+# These were primarily growth opportunities — invited talks and project mentoring —
+# and are listed below the formal courses to keep instructor experience emphasized.
+# Replace [Summer Camp Name] with the actual program name once finalized.
+
+summer_camp:
+
+  - time: "Summer 2025"
+    role: "Invited Speaker &amp; Project Mentor"
+    name: "[Summer Camp Name]"
+    description: "Gave an invited talk and helped guide student research projects."
+
+  - time: "Summer 2024"
+    role: "Invited Speaker &amp; Project Mentor"
+    name: "[Summer Camp Name]"
+    description: "Gave an invited talk and helped guide student research projects."
