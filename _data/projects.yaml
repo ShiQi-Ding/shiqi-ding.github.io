@@ -4,18 +4,14 @@
 
 items:
 
-  - title: "EV-related Socio-Spatial Micro Urban Typologies"
+  - title: "EV-related Socio-Spatial Micro Urban Typology Clustering"
     keywords: "EV charging infrastructure · socio-spatial clustering · equity · geographically weighted ML"
     status: "coming-soon"
 
-  - title: "Estimating EV Usage"
+  - title: "Estimating Spatial Patterns of EV Usage Given Sparse Survey Data"
     keywords: "Bayesian hierarchical models · zero-inflated beta · electric vehicle miles traveled · spatial uncertainty"
     status: "coming-soon"
 
   - title: "Short-Term Time-Series Forecasting of EV Charging Load"
     keywords: "time-series forecasting · perceived weather · deep learning · charging load"
     status: "coming-soon"
-
-  - title: "Spatio-Temporal Charging Demand Forecasting"
-    keywords: "spatio-temporal modeling · charging demand · uncertainty quantification · deep learning"
-    status: "in-progress"
