@@ -1,0 +1,16 @@
+<div class="paper">
+  <p class="title"><b>{{ include.paper.title }}</b></p>
+  <p>{{ include.paper.authors }}</p>
+  <p><i>{{ include.paper.venue }}</i></p>
+  <div class="paper-buttons">
+    {% if include.paper.paper_url %}
+      <a class="button" href="{{ include.paper.paper_url }}" target="_blank">{{ include.paper.paper_label | default: "Paper" }}</a>
+    {% endif %}
+    {% if include.paper.code %}
+      <a class="button" href="{{ include.paper.code }}" target="_blank">Code</a>
+    {% endif %}
+    {% if include.paper.data %}
+      <a class="button" href="{{ include.paper.data }}" target="_blank">Data</a>
+    {% endif %}
+  </div>
+</div>

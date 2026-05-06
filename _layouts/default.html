@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>{{ site.data.main_info.name }} | {{ page.title }}</title>
+  <meta name="description" content="{{ site.description }}">
+  <meta name="author" content="{{ site.data.main_info.name }}">
+  <meta property="og:title" content="{{ site.data.main_info.name }}" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="{{ site.url }}" />
+  <meta property="og:site_name" content="{{ site.data.main_info.name }}" />
+  <link rel="canonical" href="{{ site.url }}" />
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='https://fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/normalize.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/external/skeleton/skeleton.css" | prepend: site.baseurl }}>
+  <link rel="stylesheet" href={{ "/libs/custom/my_css.css" | prepend: site.baseurl }}>
+
+  <!-- JQuery
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src={{ "/libs/external/jquery-3.1.1.min.js" | prepend: site.baseurl }}></script>
+
+  <!-- Font-Awesome
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/fontawesome-free-6.6.0-web/css/all.min.css" | prepend: site.baseurl }}>
+
+  <!-- Academicons
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/academicons-1.8.6/css/academicons.min.css" | prepend: site.baseurl }}>
+
+  <!-- Skeleton tabs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/skeleton_tabs/skeleton-tabs.css" | prepend: site.baseurl }}>
+  <script src={{ "/libs/external/skeleton_tabs/skeleton-tabs.js" | prepend: site.baseurl }}></script>
+
+  <!-- Timeline
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href={{ "/libs/external/timeline.css" | prepend: site.baseurl }}>
+
+  <!-- Leaflet (loaded only on pages that opt in via front matter `needs_map: true`) -->
+  {% if page.needs_map %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  {% endif %}
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src={{ "/libs/custom/my_js.js" | prepend: site.baseurl }}></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+  <link rel="shortcut icon" type="image/png" href={{ "/libs/icon.png" | prepend: site.baseurl }}>
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+
+    <section class="header">
+      <div class="row">
+        <div class="three columns">
+          <a href="{{ '/' | prepend: site.baseurl }}"><img class="u-max-full-width" src='{{ site.baseurl }}{{ site.data.main_info.profile_pic }}'></a>
+        </div>
+        <div class="nine columns main-description">
+            <h1>{{ site.data.main_info.name }}</h1>
+            <p>{{ site.data.main_info.title }}</p>
+            <p>{{ site.data.main_info.email }}</p>
+            <p>
+              <a href="{{ site.data.main_info.google_scholar }}" target="_blank" title="Google Scholar" style="margin-right: 12px;">
+                <i class="ai ai-google-scholar ai-lg" aria-hidden="true"></i>
+              </a>
+
+              <a href="{{ site.data.main_info.orcid }}" target="_blank" title="ORCID" style="margin-right: 12px;">
+                <i class="ai ai-orcid ai-lg" aria-hidden="true"></i>
+              </a>
+
+              <a href="{{ site.data.main_info.github }}" target="_blank" title="GitHub" style="margin-right: 12px;">
+                <i class="fa-brands fa-github fa-lg"></i>
+              </a>
+
+              <a href="{{ site.data.main_info.linkedin }}" target="_blank" title="LinkedIn">
+                <i class="fa-brands fa-linkedin fa-lg"></i>
+              </a>
+            </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="navbar-spacer"></div>
+    <nav class="navbar">
+      <div class="container">
+        <ul class="navbar-list">
+          {% assign current = page.url | replace: '.html', '' | replace: '/index', '/' %}
+          <li class="navbar-item"><a class="navbar-link {% if current == '/' %}active{% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
+          <li class="navbar-item"><a class="navbar-link {% if current == '/project' %}active{% endif %}" href="{{ '/project.html' | prepend: site.baseurl }}">Project</a></li>
+          <li class="navbar-item"><a class="navbar-link {% if current == '/teaching' %}active{% endif %}" href="{{ '/teaching.html' | prepend: site.baseurl }}">Teaching</a></li>
+          <li class="navbar-item"><a class="navbar-link {% if current == '/off-hours' %}active{% endif %}" href="{{ '/off-hours.html' | prepend: site.baseurl }}">Off Hours</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    {{ content }}
+
+    <div class="footer">
+      <div class="row">
+        <div class="six columns">
+          {{ site.data.main_info.name }} &middot; {{ site.data.main_info.email }}
+        </div>
+        <div class="six columns" style="text-align: right;">
+          <a href="{{ site.data.main_info.google_scholar }}" target="_blank" title="Google Scholar" style="margin-right: 10px;">
+            <i class="ai ai-google-scholar" aria-hidden="true"></i>
+          </a>
+          <a href="{{ site.data.main_info.orcid }}" target="_blank" title="ORCID" style="margin-right: 10px;">
+            <i class="ai ai-orcid" aria-hidden="true"></i>
+          </a>
+          <a href="{{ site.data.main_info.github }}" target="_blank" title="GitHub" style="margin-right: 10px;">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="{{ site.data.main_info.linkedin }}" target="_blank" title="LinkedIn">
+            <i class="fa-brands fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

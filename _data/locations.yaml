@@ -1,0 +1,46 @@
+# Locations shown on the global map in the Vitæ section.
+# Listed chronologically; the polyline connects them in order.
+
+places:
+
+  - city: "Qingdao, China"
+    lat: 36.0671
+    lon: 120.3826
+    time: "1993"
+    role: "Born here"
+
+  - city: "Wuhan, China"
+    lat: 30.5928
+    lon: 114.3055
+    time: "2011 – 2016"
+    role: "Bachelor of Architecture, Wuhan University"
+
+  - city: "Milan, Italy"
+    lat: 45.4642
+    lon: 9.1900
+    time: "2016 – 2018"
+    role: "M.Sc. in Architecture, Politecnico di Milano"
+
+  - city: "Shanghai, China"
+    lat: 31.2304
+    lon: 121.4737
+    time: "2018 – 2019"
+    role: "Design Associate, WeWork Inc."
+
+  - city: "Guangzhou, China"
+    lat: 23.1291
+    lon: 113.2644
+    time: "2020 – 2022"
+    role: "Architect, XAA Janson Xian Architects"
+
+  - city: "Clemson, SC, USA"
+    lat: 34.6834
+    lon: -82.8374
+    time: "2022 – 2023"
+    role: "Ph.D. Student, Civil Engineering, Clemson University"
+
+  - city: "Seattle, WA, USA"
+    lat: 47.6062
+    lon: -122.3321
+    time: "2023 – present"
+    role: "Ph.D. Candidate, Interdisciplinary Urban Design and Planning, University of Washington"

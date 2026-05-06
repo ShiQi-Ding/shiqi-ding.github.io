@@ -1,0 +1,23 @@
+title: "Shiqi Ding"
+description: "Shiqi Ding — Ph.D. Candidate, Interdisciplinary Urban Design and Planning, University of Washington"
+url: "https://shiqi-ding.github.io"
+
+source:      .
+destination: ./_site
+includes:    ./_includes
+baseurl: ""
+
+exclude:
+  - _website_2014
+  - _projects
+  - __deploy.sh
+  - __redirect_mit.html
+  - __redirect_su.html
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+collections:
+  projects:
+    output: false

@@ -1,0 +1,23 @@
+{% assign journals = include.papers | where: "type", "journal" %}
+{% if journals.size > 0 %}
+  <h5 class="pub-group-heading">Journal</h5>
+  {% for paper in journals %}
+    {% include paper_item.html paper=paper %}
+  {% endfor %}
+{% endif %}
+
+{% assign conferences = include.papers | where: "type", "conference" %}
+{% if conferences.size > 0 %}
+  <h5 class="pub-group-heading">Conference</h5>
+  {% for paper in conferences %}
+    {% include paper_item.html paper=paper %}
+  {% endfor %}
+{% endif %}
+
+{% assign under_review = include.papers | where: "type", "under_review" %}
+{% if under_review.size > 0 %}
+  <h5 class="pub-group-heading">Work in Progress</h5>
+  {% for paper in under_review %}
+    {% include paper_item.html paper=paper %}
+  {% endfor %}
+{% endif %}

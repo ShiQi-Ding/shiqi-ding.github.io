@@ -1,0 +1,160 @@
+---
+layout: default
+title: Home
+needs_map: true
+---
+
+<!-- ========== BIO ========== -->
+<div class="docs-section" id="bio">
+  <h4>Bio</h4>
+
+  <p>
+    I am a Ph.D. Candidate in the <a href="https://sites.uw.edu/urbdpphd/" target="_blank">Interdisciplinary Urban Design and Planning program</a> at the <a href="https://www.washington.edu/" target="_blank">University of Washington</a>, advised by <a href="https://faculty.washington.edu/lingwu/" target="_blank">Prof. Lingzi Wu</a>.
+  </p>
+
+  <p>
+    My research focuses on the <b>emerging electricity demand from urban mobility</b> in the context of increasing <b>electrification and decarbonization</b>. My interdisciplinary work sits at the intersection of <b>urban systems, transportation, and energy infrastructure</b>. I am particularly interested in bringing urban context into the modeling of spatially and temporally heterogeneous electricity demand with <b>uncertainty quantification</b>. I use a variety of statistical, machine learning, and deep learning methods to inform infrastructure investment, policy, and planning decisions under uncertainty.
+  </p>
+
+  <p>
+    My recent work has focused on socio-spatial disparities in EV charging infrastructure
+    [<a href="https://doi.org/10.1016/j.scs.2025.106193" target="_blank">SCS'25</a>],
+    spatial-temporal modeling of EV usage and charging demand
+    [<a href="https://doi.org/10.1061/9780784486443.030" target="_blank">i3CE'25</a>,
+    i3CE'26,
+    <a href="http://dx.doi.org/10.2139/ssrn.6161434" target="_blank">TRD under review</a>],
+    and natural disaster impacts on transportation infrastructure
+    [<a href="https://doi.org/10.1007/s11069-025-07504-9" target="_blank">NatHaz'25</a>].
+  </p>
+
+  <p>
+    I am a 2024&ndash;2025 Graduate Fellow of the <a href="https://www.cei.washington.edu" target="_blank">Clean Energy Institute</a> at UW, where I also completed the <a href="https://www.cei.washington.edu/education/uw-graduate-students/graduate-certificate-in-clean-energy/" target="_blank">Graduate Certificate in Clean Energy Science, Engineering, &amp; Society</a>. I have served as Predoctoral Instructor for Real Estate Data Modeling (RE 497/597) at the Runstad Department of Real Estate.
+  </p>
+
+  <p>
+    My path to research has not been a straight line, and I am glad for that. I trained as an architect in Wuhan and Milan, where I grew interested in sustainability, first through the care and humility I saw in historical preservation, then through the natural environments I encountered in Europe. After three years in architectural practice, I came to research looking for ways to work on sustainability more deeply than industry allowed. My first year of Ph.D. study at Clemson University, with two early publications, gave me the confidence that this was the right path. I continued at UW, where I now work on questions I am genuinely excited about.
+  </p>
+
+  <p>
+    What I love about research is the work itself: asking questions, working through problems, and building something that holds up.
+  </p>
+</div>
+
+<!-- ========== NEWS ========== -->
+<div class="docs-section" id="news">
+  <h4>News</h4>
+
+  <div class="news-scroll">
+    <ul class="news-list">
+      {% for item in site.data.news.items %}
+        <li>
+          <span class="news-date"><b>{{ item.date }}</b></span>
+          <span class="news-text">{{ item.text }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<!-- ========== PUBLICATIONS ========== -->
+<div class="docs-section" id="publications">
+  <h4>Publications</h4>
+
+  <p>
+    Most recent publications on <a href="{{ site.data.main_info.google_scholar }}" target="_blank">Google Scholar</a>.<br/>
+    <sup>‡</sup> indicates equal contribution.
+  </p>
+
+  <ul class="tab-nav">
+    <li><div class="button active" data-ref="#papers-selected">Selected</div></li>
+    <li><div class="button" data-ref="#papers-all">All</div></li>
+  </ul>
+
+  <div class="tab-content">
+    <div class="tab-pane active" id="papers-selected">
+      {% assign selected_papers = site.data.publications.papers | where: "selected", "y" %}
+      {% include publication_groups.html papers=selected_papers %}
+    </div>
+
+    <div class="tab-pane" id="papers-all">
+      {% include publication_groups.html papers=site.data.publications.papers %}
+    </div>
+  </div>
+</div>
+
+<!-- ========== VITÆ ========== -->
+<div class="docs-section" id="vita">
+  <h4>Vit&aelig;</h4>
+
+  <p>Full CV in PDF is available upon request.</p>
+
+  <div id="vita-map"></div>
+
+  <p class="map-caption">Places I&rsquo;ve lived and worked.</p>
+</div>
+
+<!-- ========== WEBSITE DESIGN ========== -->
+<div class="docs-section" id="website-design">
+  <h4>Website Design</h4>
+
+  <p>
+    This website is built with the
+    <a href="https://github.com/msaveski/www_personal" target="_blank">Jekyll template by Prof. Martin Saveski</a>.
+    Many thanks for sharing it openly.
+  </p>
+</div>
+
+<!-- ========== MAP SCRIPT ========== -->
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var places = [
+      {% for p in site.data.locations.places %}
+        {
+          city: {{ p.city | jsonify }},
+          coords: [{{ p.lat }}, {{ p.lon }}],
+          time: {{ p.time | jsonify }},
+          role: {{ p.role | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
+
+    var map = L.map("vita-map", {
+      scrollWheelZoom: false,
+      zoomControl: true,
+      attributionControl: true,
+      worldCopyJump: false
+    });
+
+    L.tileLayer("https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png", {
+      attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
+      subdomains: "abcd",
+      maxZoom: 19,
+      minZoom: 1,
+      noWrap: true
+    }).addTo(map);
+
+    var bounds = L.latLngBounds(places.map(function (p) { return p.coords; }));
+    map.fitBounds(bounds, { padding: [30, 30], maxZoom: 4 });
+
+    L.polyline(
+      places.map(function (p) { return p.coords; }),
+      { color: "#888", weight: 1.4, dashArray: "4,6", opacity: 0.7 }
+    ).addTo(map);
+
+    places.forEach(function (p, i) {
+      L.circleMarker(p.coords, {
+        radius: 6,
+        color: "#222",
+        fillColor: "#33C3F0",
+        fillOpacity: 0.85,
+        weight: 1.5
+      })
+        .addTo(map)
+        .bindPopup(
+          "<b>" + p.city + "</b><br/>" +
+          "<span style='color:#666'>" + p.time + "</span><br/>" +
+          p.role
+        );
+    });
+  });
+</script>

@@ -1,0 +1,68 @@
+papers:
+
+  # =========================
+  # Peer-reviewed Journal Articles
+  # =========================
+
+  - type: journal
+    selected: y
+    title: "Disparities in electric vehicle charging infrastructure distribution: A socio-spatial clustering study in King County, Washington"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "Sustainable Cities and Society, 121, 106193, 2025."
+    paper_url: "https://doi.org/10.1016/j.scs.2025.106193"
+
+  - type: journal
+    selected: y
+    title: "Short-term natural disaster impacts on transportation infrastructure: A Systematic Review"
+    authors: "Bei Dong, <b>Shiqi Ding</b>, Lingzi Wu, Xinghua Li"
+    venue: "Natural Hazards, 121, 17321–17362, 2025."
+    paper_url: "https://doi.org/10.1007/s11069-025-07504-9"
+
+  - type: journal
+    selected: y
+    title: "Enhancing energy efficiency and thermal satisfaction in office buildings: A comprehensive evaluation of space match strategy"
+    authors: "<b>Shiqi Ding</b>, Chao Tang, Da Li, Sara Lopes"
+    venue: "Energy and Buildings, 298, 113526, 2023."
+    paper_url: "https://doi.org/10.1016/j.enbuild.2023.113526"
+
+  # =========================
+  # Conference Proceedings
+  # =========================
+
+  - type: conference
+    selected: y
+    title: "Temperature Effects on Hourly Electric Vehicle Charging Demand Across Temporal Contexts"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "ASCE International Conference on Computing in Civil Engineering (i3CE), 2026."
+
+  - type: conference
+    selected: y
+    title: "Analyzing Public Electric Vehicle Charging Distribution and Urban Socio-Spatial Characteristics Using Geographically Weighted Machine Learning"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "ASCE International Conference on Computing in Civil Engineering (i3CE), pp. 263–272, 2025."
+    paper_url: "https://doi.org/10.1061/9780784486443.030"
+
+  - type: conference
+    selected: y
+    title: "Assessing energy performance and thermal satisfaction of flexible space usage in office buildings"
+    authors: "<b>Shiqi Ding</b>, Chao Tang, Sara Lopes, Da Li"
+    venue: "Construction Research Congress (CRC), pp. 316–326, 2024."
+    paper_url: "https://doi.org/10.1061/9780784485279.033"
+
+  # =========================
+  # Under Review and Work in Progress
+  # =========================
+
+  - type: under_review
+    selected: y
+    title: "Estimating Electric Vehicle Miles Traveled: a Bayesian Hierarchical Spatial Zero-Inflated Beta Model"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "Transportation Research Part D: Transport and Environment. Submitted Jan 2026, Under Review."
+    paper_url: "http://dx.doi.org/10.2139/ssrn.6161434"
+    paper_label: "Preprint"
+
+  - type: under_review
+    selected: y
+    title: "The Effect of Perceived Weather on Short-Term EV Charging Load Forecasting"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "Manuscript in preparation."
