@@ -1,7 +1,12 @@
 courses:
 
-  - role: "Predoctoral Instructor"
-    time: "2024 Au &amp; 2025 Au"
+  - role: "Instructor"
+    time: "2025 Au"
+    course: "R E 497/597: Real Estate Data Modeling"
+    department: "Runstad Department of Real Estate, UW"
+
+  - role: "Instructor"
+    time: "2024 Au"
     course: "R E 497/597: Real Estate Data Modeling"
     department: "Runstad Department of Real Estate, UW"
 
@@ -24,10 +29,10 @@ summer_camp:
 
   - time: "Summer 2025"
     role: "Invited Speaker &amp; Project Mentor"
-    name: "[Summer Camp Name]"
+    name: "Washington Transportation Highschool Summer Camp"
     description: "Gave an invited talk and helped guide student research projects."
 
   - time: "Summer 2024"
-    role: "Invited Speaker &amp; Project Mentor"
-    name: "[Summer Camp Name]"
-    description: "Gave an invited talk and helped guide student research projects."
+    role: "Project Mentor"
+    name: "Washington Transportation Highschool Summer Camp"
+    description: "Helped guide student research projects."
