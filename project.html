@@ -18,9 +18,15 @@ title: Projects
           <p class="project-keywords">{{ project.keywords }}</p>
         </div>
         <div class="five columns">
-          <div class="project-thumb {% if project.status == 'in-progress' %}in-progress{% endif %}">
-            <span>{% if project.status == 'in-progress' %}In progress{% else %}Coming soon{% endif %}</span>
-          </div>
+          {% if project.image %}
+            <div class="project-thumb has-image">
+              <img src="{{ project.image | prepend: site.baseurl }}" alt="{{ project.title }}" loading="lazy">
+            </div>
+          {% else %}
+            <div class="project-thumb {% if project.status == 'in-progress' %}in-progress{% endif %}">
+              <span>{% if project.status == 'in-progress' %}In progress{% else %}Coming soon{% endif %}</span>
+            </div>
+          {% endif %}
         </div>
       </div>
     </div>

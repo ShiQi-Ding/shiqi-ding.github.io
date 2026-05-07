@@ -131,6 +131,19 @@ h4 {
   background: #fbf6e9;
   color: #b88a1e;
   border-color: #ead9a9; }
+.project-thumb.has-image {
+  background: transparent;
+  height: auto;
+  padding: 0;
+  display: block;
+  border: 1px solid #eee;
+  overflow: hidden;
+  letter-spacing: normal;
+  text-transform: none; }
+.project-thumb.has-image img {
+  display: block;
+  width: 100%;
+  height: auto; }
 .project-outro {
   margin-top: 36px;
   color: #555;
