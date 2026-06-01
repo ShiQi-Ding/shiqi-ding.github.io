@@ -14,6 +14,14 @@
   {% endfor %}
 {% endif %}
 
+{% assign conference_abstract = include.papers | where: "type", "conference_abstract" %}
+{% if conference_abstract.size > 0 %}
+  <h5 class="pub-group-heading">Conference Abstract</h5>
+  {% for paper in conference_abstract %}
+    {% include paper_item.html paper=paper %}
+  {% endfor %}
+{% endif %}
+
 {% assign under_review = include.papers | where: "type", "under_review" %}
 {% if under_review.size > 0 %}
   <h5 class="pub-group-heading">Work in Progress</h5>
