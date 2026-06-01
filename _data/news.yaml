@@ -6,7 +6,7 @@ items:
     text: "Completed the PhD track in Statistics. Received my Letter of Recognition from CSSS, UW."
 
   - date: "06/2026"
-    text: "My abstract was accepted for the 2026 ACSP annual conference. Looking forward to presenting my work in Pittsburgh."
+    text: "My abstract was accepted for the 2026 <i>ACSP Annual Conference</i>. Looking forward to presenting my work in Pittsburgh."
 
   - date: "05/2026"
     text: "My proposal has been selected and awarded for the College of Built Environment student summer funding ($3,250)!"
@@ -30,4 +30,4 @@ items:
     text: "Received <i>Most Inspiring</i> and <i>Best Use of Visuals</i> at the CEI Graduate Fellow Lightning Talk. Really fun to share my work with fellows in such diverse research backgrounds."
 
   - date: "05/2024"
-    text: "Was awarded the Clean Energy Institute Graduate Fellowship, fellowship plus two quarters of RA support!"
+    text: "Was awarded the Clean Energy Institute (CEI) Graduate Fellowship, fellowship plus two quarters of RA support!"
