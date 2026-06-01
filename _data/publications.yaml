@@ -50,6 +50,23 @@ papers:
     paper_url: "https://doi.org/10.1061/9780784485279.033"
 
   # =========================
+  # Conference Abstracts
+  # =========================
+ 
+  - type: conference
+    selected: y
+    title: "A Cross-Classified Multilevel Analysis of Workers’ Commuting Adaptive Capacity"
+    authors: "<b>Shiqi Ding</b>, Qing Shen, Lingzi Wu"
+    venue: "Association of Collegiate Schools of Planning (ACSP) 66th Annual Conference in Pittsburgh."
+    
+  - type: conference
+    selected: y
+    title: "Spatial Patterns of Electric Vehicle Miles Traveled (EVMT) as a Proportion of Total Mobility"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "Association of Collegiate Schools of Planning (ACSP) 65th Annual Conference in Minneapolis."
+    paper_url: "https://cdn.ymaws.com/www.acsp.org/resource/resmgr/2025_conference/docs/acsp2025_bk_of_abstracts_v2.pdf"
+
+  # =========================
   # Under Review and Work in Progress
   # =========================
 
@@ -61,7 +78,7 @@ papers:
     paper_url: "http://dx.doi.org/10.2139/ssrn.6161434"
     paper_label: "Preprint"
 
-  - type: under_review
+  - type: work-in-progress
     selected: n
     title: "The Effect of Perceived Weather on Short-Term EV Charging Load Forecasting"
     authors: "<b>Shiqi Ding</b>, Lingzi Wu"
