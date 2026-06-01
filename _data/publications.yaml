@@ -53,13 +53,13 @@ papers:
   # Conference Abstracts
   # =========================
  
-  - type: conference
+  - type: conference_abstract
     selected: y
     title: "A Cross-Classified Multilevel Analysis of Workers’ Commuting Adaptive Capacity"
     authors: "<b>Shiqi Ding</b>, Qing Shen, Lingzi Wu"
     venue: "Association of Collegiate Schools of Planning (ACSP) 66th Annual Conference in Pittsburgh."
     
-  - type: conference
+  - type: conference_abstract
     selected: y
     title: "Spatial Patterns of Electric Vehicle Miles Traveled (EVMT) as a Proportion of Total Mobility"
     authors: "<b>Shiqi Ding</b>, Lingzi Wu"
