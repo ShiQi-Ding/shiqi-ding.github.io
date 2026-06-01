@@ -78,7 +78,7 @@ papers:
     paper_url: "http://dx.doi.org/10.2139/ssrn.6161434"
     paper_label: "Preprint"
 
-  - type: work-in-progress
+  - type: under_review
     selected: n
     title: "The Effect of Perceived Weather on Short-Term EV Charging Load Forecasting"
     authors: "<b>Shiqi Ding</b>, Lingzi Wu"
