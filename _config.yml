@@ -17,6 +17,8 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - off-hours.html   # temporarily hidden
+  - assets/off-hours # temporarily hidden
 
 collections:
   projects:

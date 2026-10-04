@@ -18,8 +18,12 @@ title: Teaching
   </ul>
  
   <h5 class="teaching-section-heading">Course Materials</h5>
-  <p class="teaching-placeholder">Selected materials from RE 497/597 (syllabus, agenda, sample exercises) will be linked here.</p>
-  
+  <ul class="vita-list">
+    {% for m in site.data.teaching.materials %}
+      <li><i class="fa-solid fa-file-pdf teaching-file-icon" aria-hidden="true"></i><a href="{{ m.file | prepend: site.baseurl }}" target="_blank">{{ m.label }}</a></li>
+    {% endfor %}
+  </ul>
+
   <h5 class="teaching-section-heading">Summer Camp &amp; Educational Training</h5>
   <ul class="vita-list">
     {% for item in site.data.teaching.summer_camp %}
@@ -27,6 +31,13 @@ title: Teaching
         <b>{{ item.role }}, {{ item.time }}</b><br/>
         <span class="teaching-dept">{{ item.name }}</span><br/>
         {{ item.description }}
+        {% if item.images %}
+          <div class="camp-photos">
+            {% for img in item.images %}
+              <a href="{{ img.src | prepend: site.baseurl }}" target="_blank"><img src="{{ img.src | prepend: site.baseurl }}" alt="{{ img.alt }}" loading="lazy"></a>
+            {% endfor %}
+          </div>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

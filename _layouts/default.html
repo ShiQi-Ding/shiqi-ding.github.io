@@ -111,7 +111,9 @@
           <li class="navbar-item"><a class="navbar-link {% if current == '/' %}active{% endif %}" href="{{ '/' | prepend: site.baseurl }}">Home</a></li>
           <li class="navbar-item"><a class="navbar-link {% if current == '/project' %}active{% endif %}" href="{{ '/project.html' | prepend: site.baseurl }}">Project</a></li>
           <li class="navbar-item"><a class="navbar-link {% if current == '/teaching' %}active{% endif %}" href="{{ '/teaching.html' | prepend: site.baseurl }}">Teaching</a></li>
+          {% comment %} Off Hours temporarily hidden; restore this line and remove off-hours.html from _config.yml exclude to bring it back.
           <li class="navbar-item"><a class="navbar-link {% if current == '/off-hours' %}active{% endif %}" href="{{ '/off-hours.html' | prepend: site.baseurl }}">Off Hours</a></li>
+          {% endcomment %}
         </ul>
       </div>
     </nav>

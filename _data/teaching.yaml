@@ -31,8 +31,26 @@ summer_camp:
     role: "Invited Speaker &amp; Project Mentor"
     name: '<a href="https://watransportation.camp/" target="_blank">Washington Transportation Highschool Summer Camp</a>'
     description: "Gave an invited talk and helped guide student research projects."
+    images:
+      - src: "/assets/teaching/camp2025_talk.jpg"
+        alt: "Title slide of my talk, Planning for Sustainable Urban Mobility, WA Transportation Camp 2025"
+      - src: "/assets/teaching/camp2025_group.jpg"
+        alt: "Group photo from the 2025 WA Transportation Camp"
 
   - time: "Summer 2024"
     role: "Project Mentor"
     name: '<a href="https://watransportation.camp/" target="_blank">Washington Transportation Highschool Summer Camp</a>'
     description: "Helped guide student research projects."
+    images:
+      - src: "/assets/teaching/camp2024_group.jpg"
+        alt: "Group photo from the 2024 WA Transportation Camp"
+
+# Course materials linked under "Course Materials" on the Teaching page.
+
+materials:
+
+  - label: "RE 497/597 Syllabus, Autumn 2025"
+    file: "/assets/teaching/syllabi/RE497-597_Syllabus_Au25.pdf"
+
+  - label: "RE 497/597 Syllabus, Autumn 2024"
+    file: "/assets/teaching/syllabi/RE497-597_Syllabus_Au24.pdf"

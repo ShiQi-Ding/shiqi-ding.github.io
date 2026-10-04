@@ -161,6 +161,22 @@ h4 {
 .teaching-dept {
   color: #888;
   font-size: 0.92rem; }
+.teaching-file-icon {
+  color: #aaa;
+  margin-right: 0.5rem; }
+.camp-photos {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px; }
+.camp-photos a {
+  flex: 1 1 0;
+  max-width: calc(50% - 5px); }
+.camp-photos img {
+  display: block;
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 4px; }
 .teaching-placeholder {
   color: #888;
   font-style: italic;

@@ -72,9 +72,15 @@ papers:
 
   - type: under_review
     selected: y
+    title: "Scale, Style, and Speed: Characterizing Utilization Growth Trajectories at Curbside Electric Vehicle Charging Sites"
+    authors: "<b>Shiqi Ding</b>, Lingzi Wu"
+    venue: "Manuscript in preparation, 202X."
+
+  - type: under_review
+    selected: y
     title: "Estimating Electric Vehicle Miles Traveled: a Bayesian Hierarchical Spatial Zero-Inflated Beta Model"
     authors: "<b>Shiqi Ding</b>, Lingzi Wu"
-    venue: "Transportation Research Part D: Transport and Environment. Submitted Jan 2026, Under Review."
+    venue: "Manuscript in preparation, 202X."
     paper_url: "http://dx.doi.org/10.2139/ssrn.6161434"
     paper_label: "Preprint"
 
